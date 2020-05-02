@@ -2,6 +2,8 @@ package personalfinance.model;
 
 abstract public class Common {
 
+    public Common() {}
+
     public String getValueForComboBox(){
         return null;
     }
