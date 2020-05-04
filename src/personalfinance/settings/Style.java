@@ -3,7 +3,6 @@ package personalfinance.settings;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.security.PublicKey;
 
 final public class Style {
 
@@ -23,6 +22,4 @@ final public class Style {
     public static final ImageIcon ICON_TOOLBAR_TRANSFERS = new ImageIcon("images/transfers.png");
     public static final ImageIcon ICON_TOOLBAR_CURRENCIES = new ImageIcon("images/currencies.png");
     public static final ImageIcon ICON_TOOLBAR_STATISTICS = new ImageIcon("images/statistics.png");
-
-
 }

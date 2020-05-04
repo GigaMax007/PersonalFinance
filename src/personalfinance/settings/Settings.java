@@ -11,13 +11,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.prefs.Preferences;
 
-public class Settings {
+final public class Settings {
 
     public static final File FONT_ROBOTO_LIGHT = new File("fonts/Roboto-Light.ttf");
     public static final File SAVE_DIR = new File("saves/");
     public static final String SAVE_FILE_EXT = "kmkpf";
 
-    public static final String FORMAT_AMOUNT ="%.2f"; //    константа, отвечающая за формат сохранения данных
+    public static final String FORMAT_AMOUNT = "%.2f"; //    константа, отвечающая за формат сохранения данных
     public static final String FORMAT_RATE = "%.5f";
     public static final String FORMAT_DATE = "dd.MM.yyyy";
     public static final String FORMAT_DATE_MONTH = "MMMM yyyy";
@@ -34,7 +34,7 @@ public class Settings {
     public static void init() {
         try {
             Ini ini = new Ini(FILE_SETTINGS);
-            Preferences prefs =new IniPreferences(ini);
+            Preferences prefs = new IniPreferences(ini);
             String file = prefs.node("Settings").get("FILE_SAVE", null);
             if (file != null) FILE_SAVE = new File(file);
             System.out.println(FILE_SAVE.getAbsolutePath());
@@ -42,7 +42,6 @@ public class Settings {
         } catch (IOException e) {
             save();
         }
-
     }
 
     public static File getFileSave() {
@@ -63,7 +62,6 @@ public class Settings {
             Logger.getLogger(Settings.class.getName()).log(Level.SEVERE, null, e);
         }
     }
-
 
     private static void setLocale() {
         Locale.setDefault(new Locale("ru"));
