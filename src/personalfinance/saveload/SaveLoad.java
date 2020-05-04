@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class SaveLoad {
 
-    public void load(SaveData sd) {
+    public static void load(SaveData sd) {
         try {
             JAXBContext context = JAXBContext.newInstance(Wrapper.class);
             Unmarshaller um = context.createUnmarshaller();
@@ -23,11 +23,11 @@ public class SaveLoad {
             sd.setCurrencies(wrapper.getCurrencies());
 
         } catch (JAXBException e) {
-            Logger.getLogger(SaveLoad.class.getName()).log(Level.SEVERE, null, e);
+            System.out.println("Файл не существует!");
         }
     }
 
-    public void save(SaveData sd) {
+    public static void save(SaveData sd) {
         try {
             JAXBContext context = JAXBContext.newInstance(Wrapper.class);
             Marshaller m = context.createMarshaller();
