@@ -14,7 +14,7 @@ public class PersonalFinance {
 
     public static void main(String[] args) {
         init();
-        System.out.println(Format.dateMonth(new Date())); // проверка формата даты
+//        System.out.println(Format.dateMonth(new Date())); // проверка формата даты
 //        System.out.println(Text.get("PROGRAMM_NAME"));
 //        System.out.println(Arrays.toString(Text.getMonths ()));
     }
