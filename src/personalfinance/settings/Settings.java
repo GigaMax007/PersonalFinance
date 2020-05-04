@@ -37,9 +37,10 @@ public class Settings {
             Preferences prefs =new IniPreferences(ini);
             String file = prefs.node("Settings").get("FILE_SAVE", null);
             if (file != null) FILE_SAVE = new File(file);
+            System.out.println(FILE_SAVE.getAbsolutePath());
             setLocale();
         } catch (IOException e) {
-            Logger.getLogger(Settings.class.getName()).log(Level.SEVERE, null, e);
+            save();
         }
 
     }
@@ -53,7 +54,7 @@ public class Settings {
         save();
     }
 
-    private static void save() {
+    public static void save() {
         try {
             Wini ini = new Wini(FILE_SETTINGS);
             ini.put("Settings", "FILE_SAVE", FILE_SAVE.getAbsolutePath().replace("\\", "\\\\"));
