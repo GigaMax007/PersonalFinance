@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Set;
 
-public class Format {
+final public class Format {
     public static String amount(double amount) {
         return String.format(Settings.FORMAT_AMOUNT, amount);
     }
