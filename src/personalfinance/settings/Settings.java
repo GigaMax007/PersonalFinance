@@ -21,7 +21,7 @@ final public class Settings {
     public static final String FORMAT_RATE = "%.5f";
     public static final String FORMAT_DATE = "dd.MM.yyyy";
     public static final String FORMAT_DATE_MONTH = "MMMM yyyy";
-    public static final String FORMAT_DATE_ = "yyyy";
+    public static final String FORMAT_DATE_YEAR = "yyyy";
 
     public static final String[] CURRENCIES_CODES = new String[]{"RUB", "USD", "EUR", "BYN", "UAH"};
 
@@ -37,7 +37,7 @@ final public class Settings {
             Preferences prefs = new IniPreferences(ini);
             String file = prefs.node("Settings").get("FILE_SAVE", null);
             if (file != null) FILE_SAVE = new File(file);
-            System.out.println(FILE_SAVE.getAbsolutePath());
+//            System.out.println(FILE_SAVE.getAbsolutePath());
             setLocale();
         } catch (IOException e) {
             save();
