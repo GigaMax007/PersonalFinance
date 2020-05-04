@@ -48,8 +48,9 @@ public class Article extends Common {
         hash = 97 * hash + Objects.hashCode(this.title);
         return hash;
     }
+
     @Override
-    public String getValueForComboBox(){
+    public String getValueForComboBox() {
         return title;
     }
 }

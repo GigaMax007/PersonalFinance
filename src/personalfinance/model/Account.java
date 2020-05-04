@@ -67,7 +67,7 @@ public class Account extends Common {
     }
 
     @Override
-    public String getValueForComboBox(){
+    public String getValueForComboBox() {
         return title;
     }
 

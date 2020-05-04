@@ -13,7 +13,8 @@ public class Transfer extends Common {
     private String notice;
     private Date date;
 
-    public Transfer() {}
+    public Transfer() {
+    }
 
     public Transfer(Account fromAccount, Account toAccount, double fromAmount, double toAmount, String notice, Date date) throws ModelException {
         if (fromAccount == null) throw new ModelException(ModelException.ACCOUNT_EMPTY);

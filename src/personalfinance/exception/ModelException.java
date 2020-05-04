@@ -2,8 +2,6 @@ package personalfinance.exception;
 
 import personalfinance.settings.Text;
 
-import javax.print.DocFlavor;
-
 //В классе будет реализована обработка ошибок
 public class ModelException extends Exception {
 
@@ -25,7 +23,7 @@ public class ModelException extends Exception {
         this.code = code;
     }
 
-    public String getMessage(){
+    public String getMessage() {
         switch (code) {
             case TITLE_EMPTY:
                 return Text.get("ERROR_TITLE_EMPTY");

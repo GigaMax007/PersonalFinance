@@ -19,7 +19,7 @@ public class Currency extends Common {
     public Currency(String title, String code, double rate, boolean isOn, boolean isBase) throws ModelException {
         if (title.length() == 0) throw new ModelException(ModelException.TITLE_EMPTY);
         if (code.length() == 0) throw new ModelException(ModelException.CODE_EMPTY);
-        if (rate <= 0) throw    new ModelException(ModelException.RATE_INCORRECT);
+        if (rate <= 0) throw new ModelException(ModelException.RATE_INCORRECT);
         this.title = title;
         this.code = code;
         this.rate = rate;
@@ -92,7 +92,7 @@ public class Currency extends Common {
     }
 
     @Override
-    public String getValueForComboBox(){
+    public String getValueForComboBox() {
         return title;
     }
 

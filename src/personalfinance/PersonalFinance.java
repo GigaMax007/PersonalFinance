@@ -16,7 +16,7 @@ public class PersonalFinance {
 //        System.out.println(Arrays.toString(Text.getMonths ()));
     }
 
-    private static void init(){
+    private static void init() {
         try {
             Text.init();
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();

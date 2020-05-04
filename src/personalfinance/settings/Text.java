@@ -9,7 +9,7 @@ final public class Text {
         return data.get(key);
     }
 
-    public static String[] getMonths(){
+    public static String[] getMonths() {
         String[] months = new String[12];
         months[0] = get("JANUARY");
         months[1] = get("FEBRUARY");
@@ -26,7 +26,7 @@ final public class Text {
         return months;
     }
 
-    public static void init(){
+    public static void init() {
         data.put("PROGRAMM_NAME", "Домашняя бухгалтерия");
         data.put("MENU_FILE", "Файл");
         data.put("MENU_EDIT", "Правка");

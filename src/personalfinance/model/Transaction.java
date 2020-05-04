@@ -13,7 +13,8 @@ public class Transaction extends Common {
     private Date date;
 
 
-    public Transaction() {}
+    public Transaction() {
+    }
 
     public Transaction(Account account, Article article, double amount, String notice, Date date) throws ModelException {
         if (account == null) throw new ModelException(ModelException.ACCOUNT_EMPTY);

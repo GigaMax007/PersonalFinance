@@ -4,7 +4,7 @@ abstract public class Common {
 
     public Common() {}
 
-    public String getValueForComboBox(){
+    public String getValueForComboBox() {
         return null;
     }
 
