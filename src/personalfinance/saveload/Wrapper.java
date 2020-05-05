@@ -16,11 +16,12 @@ public class Wrapper {
     private List<Currency> currencies;
 
     @XmlElement(name = "articles")
-    public void setArticles(List<Article> articles) {
-        this.articles = articles;
-    }
     public List<Article> getArticles() {
         return articles;
+    }
+
+    public void setArticles(List<Article> articles) {
+        this.articles = articles;
     }
 
     @XmlElement(name = "accounts")
