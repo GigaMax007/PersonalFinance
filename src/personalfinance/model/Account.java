@@ -92,14 +92,12 @@ public class Account extends Common {
     }
 
     @Override
-    public void postAdd() {
-        SaveData sd = SaveData.getInstance();
+    public void postAdd(SaveData sd) {
         setAmountFromTransactionsAndTransfers(sd.getTransactions(), sd.getTransfers());
     }
 
     @Override
-    public void postEdit() {
-        SaveData sd = SaveData.getInstance();
+    public void postEdit(SaveData sd) {
         for (Transaction t :
                 sd.getTransactions()) {
             if (t.getAccount().equals(sd.getOldCommon())) t.setAccount(this);

@@ -1,6 +1,7 @@
 package personalfinance.model;
 
 import personalfinance.exception.ModelException;
+import personalfinance.saveload.SaveData;
 
 import java.util.Date;
 
@@ -89,4 +90,27 @@ public class Transaction extends Common {
                 ", date=" + date +
                 '}';
     }
+
+    @Override
+    public void postAdd(SaveData sd) {
+        setAmounts(sd);
+    }
+
+    @Override
+    public void postEdit(SaveData sd) {
+        setAmounts(sd);
+    }
+
+    @Override
+    public void postRemove(SaveData sd) {
+        setAmounts(sd);
+    }
+
+    private void setAmounts(SaveData sd) {
+        for (Account a :
+                sd.getAccounts()) {
+            a.setAmountFromTransactionsAndTransfers(sd.getTransactions(), sd.getTransfers());
+        }
+    }
+    
 }
