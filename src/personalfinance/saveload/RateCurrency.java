@@ -19,7 +19,7 @@ public class RateCurrency {
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         String url = "http://www.cbr.ru/scripts/XML_daily.asp?date_req=" + dateFormat.format(new Date());
-
+//        System.out.println(url);
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         Document doc = factory.newDocumentBuilder().parse(new URL(url).openStream());
 
@@ -28,11 +28,11 @@ public class RateCurrency {
             Node node = nl.item(i);
             NodeList nlChilds = node.getChildNodes();
             for (int j = 0; j < nlChilds.getLength(); j++) {
-                if (nlChilds.item(i).getNodeName().equals("node"))
-                    result.put(nl.item(j).getTextContent(), nlChilds);
+                if (nlChilds.item(j).getNodeName().equals("CharCode"))
+                    result.put(nlChilds.item(j).getTextContent(), nlChilds);
             }
         }
-
+//        System.out.println(result);
         HashMap<String, Double> rates = new HashMap<>();
 
         for (Map.Entry<String, NodeList> entry :
@@ -50,6 +50,7 @@ public class RateCurrency {
             rates.put(entry.getKey(), (((double) Math.round(amount * 10000)) / 10000));
         }
         rates.put("RUB", 1.0);
+//        System.out.println(rates);
         double div = rates.get(base.getCode());
         for (Map.Entry<String, Double> entry :
                 rates.entrySet()) {
