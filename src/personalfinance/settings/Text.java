@@ -35,6 +35,26 @@ final public class Text {
         data.put("MENU_VIEW", "Вид");
         data.put("MENU_HELP", "Помощь");
 
+        data.put("MENU_FILE_NEW", "Новый");
+        data.put("MENU_FILE_OPEN", "Открыть");
+        data.put("MENU_FILE_SAVE", "Сохранить");
+        data.put("MENU_FILE_UPDATE_CURRENCIES", "Обновить курс валют");
+        data.put("MENU_FILE_EXIT", "Выход");
+
+        data.put("MENU_EDIT_ADD", "Добавить");
+        data.put("MENU_EDIT_EDIT", "Изменить");
+        data.put("MENU_EDIT_DELETE", "Удалить");
+
+        data.put("MENU_VIEW_OVERVIEW", "Обзор");
+        data.put("MENU_VIEW_ACCOUNTS", "Счета");
+        data.put("MENU_VIEW_ARTICLES", "Статьи");
+        data.put("MENU_VIEW_TRANSACTIONS", "Транзакции");
+        data.put("MENU_VIEW_TRANSFERS", "Переводы");
+        data.put("MENU_VIEW_CURRENCIES", "Валюты");
+        data.put("MENU_VIEW_STATISTICS", "Статистика");
+
+        data.put("MENU_HELP_ABOUT", "О программе");
+
         data.put("JANUARY", "Январь");
         data.put("FEBRUARY", "Февраль");
         data.put("MARCH", "Март");
@@ -61,6 +81,8 @@ final public class Text {
 
         data.put("YES", "Да");
         data.put("NO", "Нет");
+
+
 
     }
 }
