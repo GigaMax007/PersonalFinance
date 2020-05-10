@@ -4,11 +4,13 @@ import personalfinance.gui.MainButton;
 import personalfinance.gui.Refresh;
 
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 
 abstract public class AbstractToolBar extends JPanel implements Refresh {
 
-    public AbstractToolBar() {
-
+    public AbstractToolBar(EmptyBorder border) {
+        super();
+        setBorder(border);
     }
 
     abstract protected void init();
