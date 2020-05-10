@@ -6,8 +6,6 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class SaveLoad {
 
@@ -23,7 +21,8 @@ public class SaveLoad {
             sd.setCurrencies(wrapper.getCurrencies());
 
         } catch (JAXBException e) {
-            System.out.println("Файл не существует!");
+            System.out.println("Упс. Файл не существует!");
+            e.printStackTrace();
         }
     }
 
@@ -40,10 +39,10 @@ public class SaveLoad {
             wrapper.setTransfers(sd.getTransfers());
             wrapper.setCurrencies(sd.getCurrencies());
 
-            m.marshal(wrapper, Settings.getFileSave());
-
+           m.marshal(wrapper, Settings.getFileSave());
         } catch (JAXBException e) {
-            Logger.getLogger(SaveLoad.class.getName()).log(Level.SEVERE, null, e);
+            System.out.println("Непонятная для меня ошибка!!!");
+            e.printStackTrace();
         }
     }
 }
