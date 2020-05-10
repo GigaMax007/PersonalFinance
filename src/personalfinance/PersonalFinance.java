@@ -1,6 +1,7 @@
 package personalfinance;
 
 import personalfinance.exception.ModelException;
+import personalfinance.gui.MainFrame;
 import personalfinance.model.*;
 import personalfinance.saveload.SaveData;
 import personalfinance.settings.Settings;
@@ -15,11 +16,13 @@ public class PersonalFinance {
 
     public static void main(String[] args) throws Exception {
         init();
+        MainFrame frame = new MainFrame();
+        frame.setVisible(true);
         SaveData sd = SaveData.getInstance();
 //        System.out.println(sd.getCurrencies());
-        sd.updateCurrencies();
+//        sd.updateCurrencies();
 //        sd.save();
-        System.out.println(sd.getCurrencies());
+        System.out.println(sd);
 
 
 //       testModel();
