@@ -10,7 +10,7 @@ import java.awt.*;
 
 public class MainFrame extends JFrame implements Refresh {
 
-    private GridBagConstraints constraints;
+    private final GridBagConstraints constraints;
     private final MainMenu mm;
     private final MainToolBar tb;
 
