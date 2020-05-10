@@ -82,6 +82,17 @@ final public class Text {
         data.put("YES", "Да");
         data.put("NO", "Нет");
 
+        data.put("TOOLBAR_OVERVIEW","Обзор");
+        data.put("TOOLBAR_ACCOUNTS","Счета");
+        data.put("TOOLBAR_ARTICLES","Статьи");
+        data.put("TOOLBAR_TRANSACTIONS","Транзакции");
+        data.put("TOOLBAR_TRANSFERS","Переводы");
+        data.put("TOOLBAR_CURRENCIES","Валюты");
+        data.put("TOOLBAR_STATISTICS","Статистика");
+
+        data.put("TOOLBAR_ADD", "Добавить");
+        data.put("TOOLBAR_EDIT", "Изменить");
+        data.put("TOOLBAR_DELETE", "Удалить");
 
 
     }
