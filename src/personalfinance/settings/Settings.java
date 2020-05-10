@@ -37,7 +37,6 @@ final public class Settings {
             Preferences prefs = new IniPreferences(ini);
             String file = prefs.node("Settings").get("FILE_SAVE", null);
             if (file != null) FILE_SAVE = new File(file);
-//            System.out.println(FILE_SAVE.getAbsolutePath());
             setLocale();
         } catch (IOException e) {
             save();
