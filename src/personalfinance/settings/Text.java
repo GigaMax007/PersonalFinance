@@ -94,6 +94,8 @@ final public class Text {
         data.put("TOOLBAR_EDIT", "Изменить");
         data.put("TOOLBAR_DELETE", "Удалить");
 
+        data.put("TODAY", "Сегодня");
+
 
     }
 }
