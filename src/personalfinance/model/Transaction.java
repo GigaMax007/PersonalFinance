@@ -112,5 +112,4 @@ public class Transaction extends Common {
             a.setAmountFromTransactionsAndTransfers(sd.getTransactions(), sd.getTransfers());
         }
     }
-    
 }
