@@ -1,5 +1,6 @@
 package personalfinance.settings;
 
+import java.util.Calendar;
 import java.util.HashMap;
 
 final public class Text {
@@ -117,6 +118,14 @@ final public class Text {
         data.put("FC_ATTR", "Атрибуты");
 
         data.put("FC_ALL_FILTER", "Все файлы");
+
+        data.put("DIALOG_ABOUT_TITLE", "О программе");
+        data.put("ABOUT", "<body style='font-size: 120%; text-align: center; width: 420px;'>"
+                + "<h1>Домашняя бухгалтерия</h1><p><img src='file:images/main.png' /></p>"
+                + "<p>Данная программа была сделана по Видеокурсу Михаила Русакова<br />\"Создание крупного проекта на Java с Нуля\""
+                +"<br /><a style='font-weight: bold;' href='https://github.com/GigaMax007/PersonalFinance'>https://github.com/GigaMax007/PersonalFinance</a></p>"
+                +"<p>С Уважением, Максим Кишинский!</p>"
+                + "<p>Copyright " + Calendar.getInstance().get(Calendar.YEAR) + " </p></body>");
 
     }
 }
