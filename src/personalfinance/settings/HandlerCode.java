@@ -15,6 +15,7 @@ final public class HandlerCode {
     public static final String MENU_VIEW_ARTICLES = "MENU_VIEW_ARTICLES";
     public static final String MENU_VIEW_TRANSACTIONS = "MENU_VIEW_TRANSACTIONS";
     public static final String MENU_VIEW_TRANSFERS = "MENU_VIEW_TRANSFERS";
+    public static final String MENU_VIEW_CURRENCIES = "MENU_VIEW_CURRENCIES";
     public static final String MENU_VIEW_STATISTICS = "MENU_VIEW_STATISTICS";
     public static final String MENU_HELP_ABOUT = "MENU_HELP_ABOUT";
 
@@ -24,7 +25,7 @@ final public class HandlerCode {
     public static final String TOOLBAR_TRANSACTIONS = "TOOLBAR_TRANSACTIONS";
     public static final String TOOLBAR_TRANSFERS = "TOOLBAR_TRANSFERS";
     public static final String TOOLBAR_CURRENCIES = "TOOLBAR_CURRENCIES";
-    public static final String TOOLBAR_STATISTICS = "OOLBAR_STATISTICS";
+    public static final String TOOLBAR_STATISTICS = "TOOLBAR_STATISTICS";
 
     public static final String ADD = "ADD";
     public static final String EDIT = "EDIT";
