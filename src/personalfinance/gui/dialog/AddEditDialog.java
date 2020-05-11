@@ -39,7 +39,7 @@ public abstract class AddEditDialog extends JDialog {
         setVisible(false);
         this.c = null;
         components.clear();
-        icon.clear();
+        icons.clear();
         values.clear();
         dispose();
     }
