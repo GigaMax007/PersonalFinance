@@ -9,12 +9,18 @@ final public class Style {
     public static final Color COLOR_BUTTON_BG_NORMAL = new Color(244, 221, 221);
     public static final Color COLOR_BUTTON_BG_HOVER = Color.YELLOW;
 
+    public static final int PADDING_DIALOG = 10;
+
     public static final Font FONT_BUTTON_TOOLBAR = new Font("Roboto-Light", Font.BOLD, 14);
     public static final Font FONT_MAIN_BUTTON = new Font("Roboto-Light", Font.BOLD, 14);
+    public static final Font FONT_DIALOG_LABEL = new Font("Roboto-Light", Font.BOLD, 12);
 
     public static final EmptyBorder BORDER_PANEL = new EmptyBorder(10, 10, 10, 10);
     public static final EmptyBorder BORDER_MAIN_TOOLBAR = new EmptyBorder(10, 10, 10, 10) ;
     public static final EmptyBorder BORDER_FUNCTIONS_TOOLBAR = new EmptyBorder(5, 5, 5, 5) ;
+    public static final EmptyBorder BORDER_DIALOG = new EmptyBorder(10, 10, 10, 10);
+
+    public static final Dimension DIMENSION_DIALOG_TEXTFIELD_SIZE = new Dimension(200, 25);
 
     public static final ImageIcon ICON_MAIN = new ImageIcon("images/main.png");
 
@@ -56,4 +62,6 @@ final public class Style {
     public static final ImageIcon ICON_DELETE = new ImageIcon("images/delete.png");
 
     public static final ImageIcon ICON_DATE = new ImageIcon("images/date.png");
+    public static final ImageIcon ICON_OK = new ImageIcon("images/ok.png");
+    public static final ImageIcon ICON_CANCEL = new ImageIcon("images/cancel.png");;
 }
