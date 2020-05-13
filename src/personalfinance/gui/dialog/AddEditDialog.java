@@ -62,10 +62,14 @@ public abstract class AddEditDialog extends JDialog {
 
     private void setDialog() {
         init();
-        if (isAdd()) setTitle(Text.get("ADD"));
+        if (isAdd()) {
+            setTitle(Text.get("ADD"));
+            setIconImage(Style.ICON_ADD.getImage());
+        }
         else {
             setVelues();
             setTitle(Text.get("EDIT"));
+            setIconImage(Style.ICON_EDIT.getImage());
         }
         getContentPane().removeAll(); // Очищение панели
         getContentPane().setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS)); // Элементы с вертикальным выравниванием по оси Y
@@ -105,8 +109,9 @@ public abstract class AddEditDialog extends JDialog {
 
         JPanel panelButton = new JPanel();
         panelButton.setLayout(new BorderLayout());
+        panelButton.setAlignmentX(JPanel.LEFT_ALIGNMENT);
         panelButton.add(ok, BorderLayout.WEST);
-
+        panelButton.add(Box.createRigidArea(Style.DIMENSION_DIALOG_PADDING_BUTTON), BorderLayout.CENTER);
         panelButton.add(cancel, BorderLayout.EAST);
 
         add(panelButton);
