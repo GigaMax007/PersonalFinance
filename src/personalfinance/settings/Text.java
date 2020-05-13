@@ -83,6 +83,10 @@ final public class Text {
 
         data.put("YES", "Да");
         data.put("NO", "Нет");
+        data.put("ADD", "Добавить");
+        data.put("EDIT", "Редактировать");
+        data.put("CANCEL", "Отмена");
+
 
         data.put("TOOLBAR_OVERVIEW","Обзор");
         data.put("TOOLBAR_ACCOUNTS","Счета");
@@ -97,6 +101,10 @@ final public class Text {
         data.put("TOOLBAR_DELETE", "Удалить");
 
         data.put("TODAY", "Сегодня");
+
+        data.put("LABEL_TITLE", "Название:");
+        data.put("LABEL_CURRENCY", "Валюта:");
+        data.put("LABEL_START_AMOUNT", "Начальный баланс:");
 
         data.put("FC_HOME", "Домашняя директория");
         data.put("FC_OPEN", "Открыть");

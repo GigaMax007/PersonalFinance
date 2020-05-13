@@ -21,6 +21,7 @@ final public class Style {
     public static final EmptyBorder BORDER_DIALOG = new EmptyBorder(10, 10, 10, 10);
 
     public static final Dimension DIMENSION_DIALOG_TEXTFIELD_SIZE = new Dimension(200, 25);
+    public static final Dimension DIMENSION_DIALOG_PADDING_BUTTON = new Dimension(10, 0);
 
     public static final ImageIcon ICON_MAIN = new ImageIcon("images/main.png");
 
@@ -63,5 +64,9 @@ final public class Style {
 
     public static final ImageIcon ICON_DATE = new ImageIcon("images/date.png");
     public static final ImageIcon ICON_OK = new ImageIcon("images/ok.png");
-    public static final ImageIcon ICON_CANCEL = new ImageIcon("images/cancel.png");;
+    public static final ImageIcon ICON_CANCEL = new ImageIcon("images/cancel.png");
+
+    public static final ImageIcon ICON_TITLE = new ImageIcon("images/title.png");
+    public static final ImageIcon ICON_CURRENCY = new ImageIcon("images/currency.png");
+    public static final ImageIcon ICON_AMOUNT = new ImageIcon("images/amount.png");
 }
