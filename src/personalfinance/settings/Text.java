@@ -84,7 +84,7 @@ final public class Text {
         data.put("YES", "Да");
         data.put("NO", "Нет");
         data.put("ADD", "Добавить");
-        data.put("EDIT", "Редактировать");
+        data.put("EDIT", "Изменить");
         data.put("CANCEL", "Отмена");
 
 
@@ -105,6 +105,11 @@ final public class Text {
         data.put("LABEL_TITLE", "Название:");
         data.put("LABEL_CURRENCY", "Валюта:");
         data.put("LABEL_START_AMOUNT", "Начальный баланс:");
+        data.put("LABEL_DATE", "Дата");
+        data.put("LABEL_ACCOUNT", "Счёт");
+        data.put("LABEL_ARTICLE", "Статья");
+        data.put("LABEL_AMOUNT", "Сумма");
+        data.put("LABEL_NOTICE", "Примечание");
 
         data.put("FC_HOME", "Домашняя директория");
         data.put("FC_OPEN", "Открыть");
