@@ -1,6 +1,7 @@
 package personalfinance.gui;
 
 import personalfinance.gui.menu.MainMenu;
+import personalfinance.gui.panel.LeftPanel;
 import personalfinance.gui.toolbar.MainToolBar;
 import personalfinance.settings.Style;
 import personalfinance.settings.Text;
@@ -12,10 +13,28 @@ public class MainFrame extends JFrame implements Refresh {
 
     private final GridBagConstraints constraints;
     private final MainMenu mm;
+    private final LeftPanel leftPanel;
     private final MainToolBar tb;
 
     public MainFrame() {
         super(Text.get("PROGRAMM_NAME"));
+
+//        ConfirmDialog.show(this, "Хрень какая-то!!!", "Подтверждение удаления");
+//        new AboutDialog().setVisible(true);
+//        ArticleAddEditDialog temp = new ArticleAddEditDialog(this);
+//        try {
+//            temp.setCommon(new Article("Text"));
+//        } catch (ModelException e) {
+//            e.printStackTrace();
+//        }
+//        temp.showDialog();
+//        new TransactionAddEditDialog(this).showDialog();
+//        new TransferAddEditDialog(this).showDialog();
+//        new CurrencyAddEditDialog(this).showDialog();
+//        CurrencyAddEditDialog temp = new CurrencyAddEditDialog(this);
+//        temp.setCommon(SaveData.getInstance().getBaseCurrency());
+//        temp.showDialog();
+
         setResizable(false);
         setIconImage(Style.ICON_MAIN.getImage());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Временно
@@ -38,8 +57,10 @@ public class MainFrame extends JFrame implements Refresh {
         constraints.gridwidth = 1;
         constraints.anchor = GridBagConstraints.NORTH;
 
-//        add(new FunctionsToolBar(), constraints);
+//        add(new MainDatePicker().getDatePicker(), constraints);
 //        add leftpanel
+        leftPanel = new LeftPanel(this);
+        add(leftPanel, constraints);
         pack();
         setLocationRelativeTo(null);
     }
@@ -48,6 +69,7 @@ public class MainFrame extends JFrame implements Refresh {
     public void refresh() {
         SwingUtilities.updateComponentTreeUI(this);
         mm.refresh();
+        leftPanel.refresh();
         pack();
     }
 }
