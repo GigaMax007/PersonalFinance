@@ -12,7 +12,9 @@ final public class Style {
 
     public static final int PADDING_DIALOG = 10;
     public static final int PADDING_BALANCE = 3;
+    public static final int PADDING_PANAL = 3;
     public static final int PADDING_PANAL_BIG = 13;
+    public static final int PADDING_PANAL_EMPTY = 5;
 
     public static final Font FONT_BUTTON_TOOLBAR = new Font("Roboto-Light", Font.BOLD, 14);
     public static final Font FONT_MAIN_BUTTON = new Font("Roboto-Light", Font.BOLD, 14);
