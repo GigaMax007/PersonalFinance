@@ -8,20 +8,28 @@ final public class Style {
 
     public static final Color COLOR_BUTTON_BG_NORMAL = new Color(244, 221, 221);
     public static final Color COLOR_BUTTON_BG_HOVER = Color.YELLOW;
+    public static final Color COLOR_LEFTPANEL_BALANCE = Color.WHITE;
 
     public static final int PADDING_DIALOG = 10;
+    public static final int PADDING_BALANCE = 3;
+    public static final int PADDING_PANAL_BIG = 13;
 
     public static final Font FONT_BUTTON_TOOLBAR = new Font("Roboto-Light", Font.BOLD, 14);
     public static final Font FONT_MAIN_BUTTON = new Font("Roboto-Light", Font.BOLD, 14);
     public static final Font FONT_DIALOG_LABEL = new Font("Roboto-Light", Font.BOLD, 12);
+    public static final Font FONT_LABEL_HEADER = new Font("Roboto-Light", Font.BOLD, 16);
+    public static final Font FONT_LABEL_LEFTPANEL_CURRENCY = new Font("Roboto-Light", Font.BOLD, 14);
+    public static final Font FONT_LABEL_LEFTPANEL_AMOUNT = new Font("Roboto-Light", Font.PLAIN, 14);
 
     public static final EmptyBorder BORDER_PANEL = new EmptyBorder(10, 10, 10, 10);
+    public static final EmptyBorder BORDER_LEFTPANEL = new EmptyBorder(0, 10, 10, 10);
     public static final EmptyBorder BORDER_MAIN_TOOLBAR = new EmptyBorder(10, 10, 10, 10) ;
     public static final EmptyBorder BORDER_FUNCTIONS_TOOLBAR = new EmptyBorder(5, 5, 5, 5) ;
     public static final EmptyBorder BORDER_DIALOG = new EmptyBorder(10, 10, 10, 10);
 
     public static final Dimension DIMENSION_DIALOG_TEXTFIELD_SIZE = new Dimension(200, 25);
     public static final Dimension DIMENSION_DIALOG_PADDING_BUTTON = new Dimension(10, 0);
+    public static final Dimension DIMENSION_PADDING_BALANCE = new Dimension(10, 0);
 
     public static final ImageIcon ICON_MAIN = new ImageIcon("images/main.png");
 
@@ -78,4 +86,6 @@ final public class Style {
     public static final ImageIcon ICON_ON = new ImageIcon("images/on.png");
     public static final ImageIcon ICON_BASE = new ImageIcon("images/base.png");
 
+    public static final ImageIcon ICON_LEFTPANEL_BALANCE_CURRENCIES = new ImageIcon("images/balance_currencies.png");
+    public static final ImageIcon ICON_LEFTPANEL_BALANCE = new ImageIcon("images/balance.png");
 }

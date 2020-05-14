@@ -119,6 +119,9 @@ final public class Text {
         data.put("LABEL_ON", "Включено:");
         data.put("LABEL_BASE", "Базовая:");
 
+        data.put("BALANCE_CURRENCIES", "Баланс по валютам");
+        data.put("BALANCE", "Итоговый баланс");
+
         data.put("FC_HOME", "Домашняя директория");
         data.put("FC_OPEN", "Открыть");
         data.put("FC_SAVE", "Сохранить");
