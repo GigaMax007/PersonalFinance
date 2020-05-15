@@ -11,6 +11,8 @@ final public class Style {
     public static final Color COLOR_LEFTPANEL_BALANCE = Color.WHITE;
     public static final Color COLOR_EXP = new Color(200, 0, 0);
     public static final Color COLOR_INCOME = new Color(0, 100, 0);
+    public static final Color COLOR_ON = Color.BLACK;
+    public static final Color COLOR_OFF = new Color(170, 170, 170);
 
 
     public static final int PADDING_DIALOG = 10;
@@ -110,4 +112,5 @@ final public class Style {
     public static final ImageIcon ICON_FROM_AMOUNT = new ImageIcon("images/articles_panel.png");
     public static final ImageIcon ICON_TO_AMOUNT = new ImageIcon("images/articles_panel.png");
     public static final ImageIcon ICON_PANEL_TRANSFERS = new ImageIcon("images/transfers_panel.png");
+    public static final ImageIcon ICON_PANEL_CURRENCIES = new ImageIcon("images/currencies_panel.png");
 }
