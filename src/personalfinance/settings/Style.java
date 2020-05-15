@@ -72,6 +72,9 @@ final public class Style {
 
     public static final ImageIcon ICON_ABOUT = new ImageIcon("images/menu_help_about.png");
 
+    public static final ImageIcon ICON_MENU_POPUP_EDIT = new ImageIcon("images/menu_popup_edit.png");
+    public static final ImageIcon ICON_MENU_POPUP_DELETE = new ImageIcon("images/menu_popup_delete.png");
+
     public static final ImageIcon ICON_TOOLBAR_OVERVIEW = new ImageIcon("images/overview.png");
     public static final ImageIcon ICON_TOOLBAR_ACCOUNTS = new ImageIcon("images/accounts.png");
     public static final ImageIcon ICON_TOOLBAR_ARTICLES = new ImageIcon("images/articles.png");

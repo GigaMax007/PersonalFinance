@@ -85,6 +85,7 @@ final public class Text {
         data.put("NO", "Нет");
         data.put("ADD", "Добавить");
         data.put("EDIT", "Изменить");
+        data.put("DELETE", "Удалить");
         data.put("CANCEL", "Отмена");
 
 
