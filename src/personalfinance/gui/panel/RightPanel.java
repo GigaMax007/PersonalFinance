@@ -13,7 +13,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 
-abstract public class RightPanal extends AbstractPanel{
+abstract public class RightPanel extends AbstractPanel{
 
     protected TableData td;
 
@@ -21,7 +21,7 @@ abstract public class RightPanal extends AbstractPanel{
     private ImageIcon icon;
     private JPanel[] panels;
 
-    public RightPanal(MainFrame frame, TableData td, String title, ImageIcon icon, JPanel[] panels) {
+    public RightPanel(MainFrame frame, TableData td, String title, ImageIcon icon, JPanel[] panels) {
         super(frame);
         this.td = td;
         this.title = title;
@@ -29,11 +29,11 @@ abstract public class RightPanal extends AbstractPanel{
         this.panels = panels;
     }
 
-    public RightPanal(MainFrame frame, TableData td, String title, ImageIcon icon, AbstractToolBar tb) {
+    public RightPanel(MainFrame frame, TableData td, String title, ImageIcon icon, AbstractToolBar tb) {
         this(frame, td, title, icon, new JPanel[] {tb});
     }
 
-    public RightPanal(MainFrame frame, TableData td, String title, ImageIcon icon) {
+    public RightPanel(MainFrame frame, TableData td, String title, ImageIcon icon) {
         this(frame, td, title, icon, new JPanel[] {});
     }
 
