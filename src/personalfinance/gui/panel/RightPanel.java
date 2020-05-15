@@ -11,9 +11,8 @@ import personalfinance.settings.Text;
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import java.awt.*;
 
-abstract public class RightPanel extends AbstractPanel{
+abstract public class RightPanel extends AbstractPanel {
 
     protected TableData td;
 
@@ -27,21 +26,22 @@ abstract public class RightPanel extends AbstractPanel{
         this.title = title;
         this.icon = icon;
         this.panels = panels;
+        init();
     }
 
     public RightPanel(MainFrame frame, TableData td, String title, ImageIcon icon, AbstractToolBar tb) {
-        this(frame, td, title, icon, new JPanel[] {tb});
+        this(frame, td, title, icon, new JPanel[]{tb});
     }
 
     public RightPanel(MainFrame frame, TableData td, String title, ImageIcon icon) {
-        this(frame, td, title, icon, new JPanel[] {});
+        this(frame, td, title, icon, new JPanel[]{});
     }
 
     @Override
     public void refresh() {
         super.refresh();
         if (td != null) td.refresh();
-        for (JPanel panel:
+        for (JPanel panel :
                 panels) {
             if (panel instanceof Refresh) ((Refresh) panel).refresh();
         }
@@ -65,7 +65,8 @@ abstract public class RightPanel extends AbstractPanel{
         }
     }
 
-    protected void init() {
+    @Override
+    protected final void init() {
         enableEditDelete();
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         JLabel header = new JLabel(Text.get(title));
@@ -83,11 +84,12 @@ abstract public class RightPanel extends AbstractPanel{
         }
 
         if (td != null) {
-            Component table;
+//            System.out.println("SDF");
+//            Component table;
             JScrollPane scroll = new JScrollPane(td);
             add(scroll);
             scroll.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-            ListSelectionModel selectionModel =td.getSelectionModel();
+            ListSelectionModel selectionModel = td.getSelectionModel();
             selectionModel.addListSelectionListener(new ListSelectionListener() {
                 @Override
                 public void valueChanged(ListSelectionEvent lse) {
