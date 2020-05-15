@@ -17,7 +17,7 @@ public class TableHeaderIconRenderer extends DefaultTableCellRenderer {
     @Override
     public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
         TableCellRenderer tcr = table.getTableHeader().getDefaultRenderer();
-        Component renderer = getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+        Component renderer = tcr.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
         label.setFont(renderer.getFont());
         label.setForeground(renderer.getForeground());
         label.setBorder(((JComponent) renderer).getBorder());
