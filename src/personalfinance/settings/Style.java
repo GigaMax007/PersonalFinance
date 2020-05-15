@@ -15,6 +15,8 @@ final public class Style {
     public static final int PADDING_PANAL = 3;
     public static final int PADDING_PANAL_BIG = 13;
     public static final int PADDING_PANAL_EMPTY = 5;
+    public static final int TABLE_ADD_ROW_HEIGHT = 18;
+
 
     public static final Font FONT_BUTTON_TOOLBAR = new Font("Roboto-Light", Font.BOLD, 14);
     public static final Font FONT_MAIN_BUTTON = new Font("Roboto-Light", Font.BOLD, 14);
@@ -22,6 +24,9 @@ final public class Style {
     public static final Font FONT_LABEL_HEADER = new Font("Roboto-Light", Font.BOLD, 16);
     public static final Font FONT_LABEL_LEFTPANEL_CURRENCY = new Font("Roboto-Light", Font.BOLD, 14);
     public static final Font FONT_LABEL_LEFTPANEL_AMOUNT = new Font("Roboto-Light", Font.PLAIN, 14);
+    public static final Font FONT_TABLE_HEADER = new Font("Roboto-Light", Font.BOLD, 16);
+    public static final Font FONT_TABLE = new Font("Roboto-Light", Font.PLAIN, 14);
+
 
     public static final EmptyBorder BORDER_PANEL = new EmptyBorder(10, 10, 10, 10);
     public static final EmptyBorder BORDER_LEFTPANEL = new EmptyBorder(0, 10, 10, 10);
@@ -32,6 +37,8 @@ final public class Style {
     public static final Dimension DIMENSION_DIALOG_TEXTFIELD_SIZE = new Dimension(200, 25);
     public static final Dimension DIMENSION_DIALOG_PADDING_BUTTON = new Dimension(10, 0);
     public static final Dimension DIMENSION_PADDING_BALANCE = new Dimension(10, 0);
+    public static final Dimension DIMENSION_TABLE_SHOW_SIZE =new Dimension(850, 450);
+
 
     public static final ImageIcon ICON_MAIN = new ImageIcon("images/main.png");
 
