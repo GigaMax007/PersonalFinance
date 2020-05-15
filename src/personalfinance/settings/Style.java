@@ -21,6 +21,7 @@ final public class Style {
     public static final int PADDING_PANAL_BIG = 13;
     public static final int PADDING_PANAL_EMPTY = 5;
     public static final int TABLE_ADD_ROW_HEIGHT = 18;
+    public static final int WIDTH_FILTER_BUTTON = 200;
 
 
     public static final Font FONT_BUTTON_TOOLBAR = new Font("Roboto-Light", Font.BOLD, 14);
@@ -31,6 +32,7 @@ final public class Style {
     public static final Font FONT_LABEL_LEFTPANEL_AMOUNT = new Font("Roboto-Light", Font.PLAIN, 14);
     public static final Font FONT_TABLE_HEADER = new Font("Roboto-Light", Font.BOLD, 16);
     public static final Font FONT_TABLE = new Font("Roboto-Light", Font.PLAIN, 14);
+    public static final Font FONT_BUTTON_FILTER = new Font("Roboto-Light", Font.BOLD, 12);
 
 
     public static final EmptyBorder BORDER_PANEL = new EmptyBorder(10, 10, 10, 10);
@@ -38,6 +40,8 @@ final public class Style {
     public static final EmptyBorder BORDER_MAIN_TOOLBAR = new EmptyBorder(10, 10, 10, 10) ;
     public static final EmptyBorder BORDER_FUNCTIONS_TOOLBAR = new EmptyBorder(5, 5, 5, 5) ;
     public static final EmptyBorder BORDER_DIALOG = new EmptyBorder(10, 10, 10, 10);
+    public static final EmptyBorder BORDER_FILTER_PANEL = new EmptyBorder(0, 0, 7, 0);
+
 
     public static final Dimension DIMENSION_DIALOG_TEXTFIELD_SIZE = new Dimension(200, 25);
     public static final Dimension DIMENSION_DIALOG_PADDING_BUTTON = new Dimension(10, 0);
@@ -116,4 +120,6 @@ final public class Style {
     public static final ImageIcon ICON_TO_AMOUNT = new ImageIcon("images/articles_panel.png");
     public static final ImageIcon ICON_PANEL_TRANSFERS = new ImageIcon("images/transfers_panel.png");
     public static final ImageIcon ICON_PANEL_CURRENCIES = new ImageIcon("images/currencies_panel.png");
+    public static final ImageIcon ICON_LEFT = new ImageIcon("images/left.png");
+    public static final ImageIcon ICON_RIGHT = new ImageIcon("images/right.png");
 }
