@@ -43,5 +43,10 @@ abstract public class TableData extends JTable implements Refresh {
             getColumn(Text.get(columns[i])).setHeaderRenderer(new TableHeaderIconRenderer(icons[i]));
         }*/
         if (selectedRow != -1 && selectedRow < getRowCount()) setRowSelectionInterval(selectedRow, selectedRow);
+        init();
+    }
+
+    protected void init() {
+
     }
 }

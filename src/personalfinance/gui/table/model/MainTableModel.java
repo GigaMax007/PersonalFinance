@@ -48,6 +48,10 @@ abstract public class MainTableModel extends AbstractTableModel implements Refre
         fireTableDataChanged();
     }
 
+    public Object getObjectByRow(int row) {
+        return data.get(row);
+    }
+
     protected abstract void updateData();
 }
 
