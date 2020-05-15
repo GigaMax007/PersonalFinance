@@ -103,4 +103,5 @@ final public class Style {
 
     public static final ImageIcon ICON_PANEL_OVERVIEW = new ImageIcon("images/overview_panel.png");
     public static final ImageIcon ICON_PANEL_TRANSACTION = new ImageIcon("images/transactions_panel.png");
+    public static final ImageIcon ICON_PANEL_ACCOUNTS = new ImageIcon("images/accounts_panel.png");
 }
