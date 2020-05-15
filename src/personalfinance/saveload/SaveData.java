@@ -138,7 +138,7 @@ public final class SaveData {
         return list;
     }
 
-    public List<Transfer> getFilterTransfer() {
+    public List<Transfer> getFilterTransfers() {
         ArrayList<Transfer> list = new ArrayList<>();
         for (Transfer t :
                 transfers) {
