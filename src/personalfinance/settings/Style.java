@@ -9,6 +9,9 @@ final public class Style {
     public static final Color COLOR_BUTTON_BG_NORMAL = new Color(244, 221, 221);
     public static final Color COLOR_BUTTON_BG_HOVER = Color.YELLOW;
     public static final Color COLOR_LEFTPANEL_BALANCE = Color.WHITE;
+    public static final Color COLOR_EXP = new Color(200, 0, 0);
+    public static final Color COLOR_INCOME = new Color(0, 100, 0);
+
 
     public static final int PADDING_DIALOG = 10;
     public static final int PADDING_BALANCE = 3;
@@ -97,4 +100,7 @@ final public class Style {
 
     public static final ImageIcon ICON_LEFTPANEL_BALANCE_CURRENCIES = new ImageIcon("images/balance_currencies.png");
     public static final ImageIcon ICON_LEFTPANEL_BALANCE = new ImageIcon("images/balance.png");
+
+    public static final ImageIcon ICON_PANEL_OVERVIEW = new ImageIcon("images/overview_panel.png");
+    public static final ImageIcon ICON_PANEL_TRANSACTION = new ImageIcon("images/transactions_panel.png");
 }

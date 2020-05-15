@@ -143,6 +143,14 @@ final public class Text {
 
         data.put("FC_ALL_FILTER", "Все файлы");
 
+        data.put("LAST_TRANSACTIONS", "Последние транзакции");
+
+        data.put("DATE", "Дата");
+        data.put("ACCOUNT", "Счёт");
+        data.put("ARTICLE", "Статья");
+        data.put("AMOUNT", "Сумма");
+        data.put("NOTICE", "Примечание");
+
         data.put("DIALOG_ABOUT_TITLE", "О программе");
         data.put("ABOUT", "<body style='font-size: 120%; text-align: center; width: 420px;'>"
                 + "<h1>Домашняя бухгалтерия</h1><p><img src='file:images/main.png' /></p>"
