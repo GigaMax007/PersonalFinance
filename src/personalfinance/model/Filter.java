@@ -21,6 +21,7 @@ public class Filter {
 
     public Filter(int step) {
         this.step = step;
+        setFromTo(new GregorianCalendar());
     }
 
     public int getStep() {
@@ -93,6 +94,7 @@ public class Filter {
                         23, 59, 59).getTime();
                 break;
         }
+
     }
 
     private void offset(int i) {
