@@ -149,16 +149,17 @@ final public class Text {
         data.put("ARTICLES", "Статьи");
         data.put("TRANSACTIONS", "Транзакции");
         data.put("TRANSFERS", "Переводы");
+        data.put("STATISTICS", "Статистика");
 
         data.put("TITLE", "Название");
         data.put("DATE", "Дата");
         data.put("ACCOUNT", "Счёт");
         data.put("ARTICLE", "Статья");
         data.put("AMOUNT", "Сумма");
-        data.put("CURRENCIES", "Валюта");
+        data.put("CURRENCIES", "Валюты");
         data.put("NOTICE", "Примечание");
         data.put("FROM_ACCOUNT", "Откуда");
-        data.put("TO_ACCOUNT", "Куда");
+        data.put("TO_ACCOUNT ", "Куда");
         data.put("FROM_AMOUNT", "Снято");
         data.put("TO_AMOUNT", "Зачислено");
         data.put("CODE", "Код");
@@ -167,6 +168,8 @@ final public class Text {
         data.put("BASE", "Базовая");
 
         data.put("CHART_NO_DATA", "Нет данных за выбранный период");
+        data.put("CHART_INCOME", "Доходы по статьям");
+        data.put("CHART_EXP", "Расходы по статьям");
 
         data.put("DIALOG_ABOUT_TITLE", "О программе");
         data.put("ABOUT", "<body style='font-size: 120%; text-align: center; width: 420px;'>"
