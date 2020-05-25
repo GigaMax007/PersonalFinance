@@ -19,6 +19,7 @@ public class StatisticsPanel extends RightPanel {
         super(frame, null, "STATISTICS", Style.ICON_PANEL_STATISTICS,
                 new JPanel[] {
                         new FilterPanel(frame),
+                        new StatisticsTypePanel(frame, "CHART_INCOME"),
                         new Chart(Statistics.getDataForChartOnIncomeArticles(), "CHART_INCOME", SaveData.getInstance().getBaseCurrency().getCode()).getPanel()
                 });
     }
@@ -42,6 +43,7 @@ public class StatisticsPanel extends RightPanel {
         }
         setPanels(new JPanel[]{
                 new FilterPanel(frame),
+                new StatisticsTypePanel(frame, title),
                 chart.getPanel()
         });
         super.refresh();
