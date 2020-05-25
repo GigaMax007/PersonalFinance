@@ -35,6 +35,14 @@ public final class SaveData {
         }
     }
 
+    public void clear() {
+        articles.clear();
+        currencies.clear();
+        accounts.clear();
+        transactions.clear();
+        transfers.clear();
+    }
+
     private void sort() {
         this.articles.sort((Article a, Article a1) -> a.getTitle().compareToIgnoreCase(a1.getTitle()));
         this.accounts.sort((Account a, Account a1) -> a.getTitle().compareToIgnoreCase(a1.getTitle()));
@@ -93,23 +101,23 @@ public final class SaveData {
     }
 
     public void setArticles(List<Article> articles) {
-        this.articles = articles;
+        if (articles != null) this.articles = articles;
     }
 
     public void setCurrencies(List<Currency> currencies) {
-        this.currencies = currencies;
+        if (currencies != null) this.currencies = currencies;
     }
 
     public void setAccounts(List<Account> accounts) {
-        this.accounts = accounts;
+        if (accounts != null) this.accounts = accounts;
     }
 
     public void setTransactions(List<Transaction> transactions) {
-        this.transactions = transactions;
+        if (transactions != null) this.transactions = transactions;
     }
 
     public void setTransfers(List<Transfer> transfers) {
-        this.transfers = transfers;
+        if (transfers != null) this.transfers = transfers;
     }
 
     public Currency getBaseCurrency() {
@@ -203,6 +211,7 @@ public final class SaveData {
                 accounts) {
             a.getCurrency().setRate(rates.get(a.getCurrency().getCode()));
         }
+        isSaved = false;
     }
 
     private List getRef(Common c) {
