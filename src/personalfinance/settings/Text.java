@@ -80,6 +80,10 @@ final public class Text {
         data.put("ERROR_RATE_INCORRECT", "Некорректное значение курса!");
         data.put("ERROR_AMOUNT_FORMAT", "Некорректный формат суммы!");
         data.put("ERROR_NO_BASE_CURRENCY", "Необходима базовая валюта! Установите сначала этот параметр в другой валюте, потом он снимется в этой автоматически!");
+        data.put("ERROR_UPDATE_CURRENCIES", "Ошибка при обновлении курсов валют!");
+
+        data.put("CONFIRM_EXIT_TEXT", "Вы действительно хотите выйти? Все несохраннённые данные будут потеряны!");
+        data.put("CONFIRM_EXIT_TITLE", "Подтверждение выхода");
 
         data.put("YES", "Да");
         data.put("NO", "Нет");
