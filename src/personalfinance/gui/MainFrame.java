@@ -1,9 +1,9 @@
 package personalfinance.gui;
 
 import personalfinance.gui.menu.MainMenu;
-import personalfinance.gui.panel.CurrencyPanel;
 import personalfinance.gui.panel.LeftPanel;
 import personalfinance.gui.panel.RightPanel;
+import personalfinance.gui.panel.StatisticsPanel;
 import personalfinance.gui.toolbar.MainToolBar;
 import personalfinance.settings.Style;
 import personalfinance.settings.Text;
@@ -65,7 +65,9 @@ public class MainFrame extends JFrame implements Refresh {
         leftPanel = new LeftPanel(this);
         add(leftPanel, constraints);
 
-        setRightPanel(new CurrencyPanel(this));
+//        setRightPanel(new TransferPanel(this));
+
+        setRightPanel(new StatisticsPanel(this));
 
         pack();
         setLocationRelativeTo(null);
