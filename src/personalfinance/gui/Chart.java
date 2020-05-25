@@ -36,7 +36,7 @@ public final class Chart {
     public JPanel getPanel() {
         JFreeChart chart = ChartFactory.createPieChart3D(title, dataset, true, true, false);
         PiePlot plot = (PiePlot) chart.getPlot();
-        plot.setToolTipGenerator(new StandardPieToolTipGenerator("(0): (1) " + currencyTitle + " ((2))"));
+        plot.setToolTipGenerator(new StandardPieToolTipGenerator("{0}: {1} " + currencyTitle + " ({2})"));
         JPanel panel =new ChartPanel(chart);
         panel.setPreferredSize(Style.DIMENSION_CHART);
         if (dataset.getItemCount() == 0) {
