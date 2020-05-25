@@ -37,7 +37,7 @@ public class Statistics {
     }
 
     private static HashMap<String, Double> getDataForChartOnArticles(boolean income) {
-        List<Transaction> transactions = SaveData.getInstance().getTransactions();
+        List<Transaction> transactions = SaveData.getInstance().getFilterTransactions();
         HashMap<String,Double> data = new HashMap<>();
         for (Transaction t :
                 transactions) {
